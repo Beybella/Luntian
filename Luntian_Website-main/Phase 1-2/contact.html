@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Luntian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" style="text-decoration: none;">
+            <div class="logo">
+            <img src="assets\LUNTIANLOGO.png" alt="Luntian Logo" class="logo-img">
+              Luntian
+              </div>
+                </a>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="season.html">Flowers Season</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>📞 Phone</h3>
+                        <p>+63 912 345 6789</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📧 Email</h3>
+                        <p>hello@luntian.ph</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📍 Location</h3>
+                        <p>Metro Manila, Philippines</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>⏰ Hours</h3>
+                        <p>Mon-Sun: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone">
+                    <select required>
+                        <option value="">Select Subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="order">Product Question</option>
+                        <option value="custom">Custom Order</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luntian</h3>
+                    <p>We specialize in providing high-quality, farm-fresh flowers for all occasions—birthdays, anniversaries, weddings, sympathy, corporate events, and everyday moments that deserve to be celebrated with blooms.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="season.html">Flowers Season</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Follow us on Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="social-link" aria-label="Follow us on Instagram">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@" class="social-link" aria-label="Follow us on TikTok">
+                        <i class="fab fa-tiktok"></i>
+                        </a>
+
+                        <a href="mailto:contact@luntian.com" class="social-link" aria-label="Email Us">
+                        <i class="fas fa-envelope"></i>    
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            </div><div class="footer-bottom">
+                <p>&copy; 2025 Luntian. All rights reserved.</p>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
