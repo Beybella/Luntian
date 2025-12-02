@@ -206,6 +206,10 @@ h3 {
 }
 
 /* Features Section */
+.flower, .truck, .pin, .money {
+    padding-top: 2rem;
+}
+
 .features {
     padding: 5rem 0;
     background-color: var(--parchment);
