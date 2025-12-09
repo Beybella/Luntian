@@ -40,6 +40,27 @@ if (menuToggle && navLinks) {
     });
 }
 
+// Search Bar Functionality
+const searchInput = document.getElementById('searchInput');
+const searchBtn = document.getElementById('searchBtn');
+
+if (searchInput && searchBtn) {
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            performSearch();
+        }
+    });
+}
+
+function performSearch() {
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    if (searchTerm) {
+        // Redirect to products page with search query
+        window.location.href = `products.html?search=${encodeURIComponent(searchTerm)}`;
+    }
+}
+
 // Product Filter Functionality
 const filterButtons = document.querySelectorAll('.filter-btn');
 const productCards = document.querySelectorAll('.product-card');
@@ -349,7 +370,9 @@ function removeFromCart(index) {
     cart.splice(index, 1);
     saveCartToLocalStorage();
     updateCartCount();
+    updateCartSummary();
     renderCart();
+    console.log('Item removed from cart, cart now:', cart);
 }
 
 function updateCartSummary() {
@@ -364,6 +387,8 @@ function updateCartSummary() {
     if (subtotalEl) subtotalEl.textContent = `₱${subtotal.toFixed(2)}`;
     if (deliveryFeeEl) deliveryFeeEl.textContent = `₱${deliveryFee.toFixed(2)}`;
     if (totalEl) totalEl.textContent = `₱${total.toFixed(2)}`;
+    
+    console.log('Cart summary updated - Subtotal: ₱' + subtotal.toFixed(2) + ', Total: ₱' + total.toFixed(2));
 }
 
 // Checkout button
