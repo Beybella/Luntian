@@ -1,6 +1,7 @@
 <?php 
-$pageTitle = "Home"; // Sets the browser tab title
-include 'includes/header.php'; 
+    $pageTitle = "Home";
+    $activePage = "home";
+    include 'includes/header.php'; 
 ?>
 
     <section id="home" class="hero">
@@ -19,24 +20,32 @@ include 'includes/header.php';
         <div class="container">
             <div class="feature-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">減</div>
-                    <h3>Fresh Daily</h3>
-                    <p>Sourced daily from trusted local suppliers</p>
+                    <i class="fa-solid fa-seedling fa-4x" style="color: var(--sage);"></i>            
+                    <div class="flower">
+                        <h3>Fresh Daily</h3>
+                        <p>Sourced daily from trusted local suppliers</p>
+                    </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">囹</div>
-                    <h3>Same-Day Delivery</h3>
-                    <p>Quick delivery across Metro Manila</p>
+                    <i class="fa fa-truck fa-4x" style="color: var(--sage);"></i>  
+                    <div class="truck">                  
+                        <h3>Same-Day Delivery</h3>
+                        <p>Quick delivery across Metro Manila</p>
+                    </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">桃</div>
-                    <h3>Pickup Available</h3>
-                    <p>Convenient pickup location</p>
+                    <i class="fa fa-map-pin fa-4x" style="color: var(--sage);"></i>    
+                    <div class="pin">               
+                        <h3>Pickup Available</h3>
+                        <p>Convenient pickup location</p>
+                    </div>  
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">腸</div>
-                    <h3>Affordable Prices</h3>
-                    <p>Quality flowers at great value</p>
+                    <i class="fa-solid fa-coins fa-4x" style="color: var(--sage);"></i>  
+                    <div class="money">
+                        <h3>Affordable Prices</h3>
+                        <p>Quality flowers at great value</p>
+                    </div>
                 </div>
             </div>
         </div>

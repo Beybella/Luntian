@@ -1,6 +1,7 @@
 <?php 
-$pageTitle = "Flowers Season";
-include 'includes/header.php'; 
+    $pageTitle = "Flowers Season";
+    $activePage = "season";
+    include 'includes/header.php'; 
 ?>
 
     <section id="season" class="season">
